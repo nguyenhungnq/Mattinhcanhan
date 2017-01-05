@@ -30,15 +30,13 @@
                                     <constraint firstAttribute="width" constant="272" id="yZ8-YI-lJd"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="EZP-pe-Ghr">
-                                <frame key="frameInset" minX="5" minY="106" width="311" height="366"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="EZP-pe-Ghr">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="311" id="7vt-rm-4ce"/>
                                     <constraint firstAttribute="height" constant="366" id="XdM-Rp-beo"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ske-CB-tgR">
-                                <frame key="frameInset" minX="53" minY="117" width="215" height="343"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ske-CB-tgR">
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fwp-ih-Xi8">
                                         <subviews>
@@ -167,9 +165,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dc-2i-ANs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dc-2i-ANs">
                                 <frame key="frameInset" minX="32" minY="48" width="257" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="77N-M8-e1I"/>
+                                    <constraint firstAttribute="width" constant="257" id="tep-Df-RJv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -178,18 +179,21 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sIY-HH-V1v" secondAttribute="bottom" id="0AU-aw-ulD"/>
+                            <constraint firstItem="EZP-pe-Ghr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="45" id="3gZ-Lv-nMZ"/>
                             <constraint firstItem="ske-CB-tgR" firstAttribute="centerY" secondItem="EZP-pe-Ghr" secondAttribute="centerY" id="7vY-AK-L5q"/>
                             <constraint firstAttribute="trailing" secondItem="PSc-fb-uYU" secondAttribute="trailing" id="Axi-UG-lwx"/>
                             <constraint firstItem="sIY-HH-V1v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ke6-nR-0tM"/>
-                            <constraint firstItem="EZP-pe-Ghr" firstAttribute="top" secondItem="pW2-cW-JIw" secondAttribute="bottom" constant="10" id="ViO-g0-Fo2"/>
+                            <constraint firstItem="9dc-2i-ANs" firstAttribute="centerY" secondItem="pW2-cW-JIw" secondAttribute="centerY" id="Lg7-Se-h0M"/>
                             <constraint firstItem="sIY-HH-V1v" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YbF-Je-axy"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PSc-fb-uYU" secondAttribute="bottom" id="YjY-Jt-rRV"/>
                             <constraint firstItem="EZP-pe-Ghr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="efX-JZ-asg"/>
+                            <constraint firstItem="9dc-2i-ANs" firstAttribute="leading" secondItem="pW2-cW-JIw" secondAttribute="leading" constant="15" id="eoZ-xH-SOz"/>
+                            <constraint firstItem="ske-CB-tgR" firstAttribute="top" secondItem="pW2-cW-JIw" secondAttribute="bottom" constant="14" id="hdo-jq-jQp"/>
                             <constraint firstItem="PSc-fb-uYU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="joU-Vd-S25"/>
                             <constraint firstItem="pW2-cW-JIw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nfd-J6-uFN"/>
-                            <constraint firstItem="pW2-cW-JIw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="t5R-8x-g9o"/>
                             <constraint firstAttribute="trailing" secondItem="sIY-HH-V1v" secondAttribute="trailing" id="wwA-h6-4aq"/>
                             <constraint firstItem="ske-CB-tgR" firstAttribute="centerX" secondItem="EZP-pe-Ghr" secondAttribute="centerX" id="zEm-ef-BWw"/>
+                            <constraint firstItem="9dc-2i-ANs" firstAttribute="trailing" secondItem="pW2-cW-JIw" secondAttribute="trailing" constant="-15" id="zse-En-5fK"/>
                         </constraints>
                     </view>
                 </viewController>
