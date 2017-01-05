@@ -16,6 +16,7 @@
 		6722B0FA1E1CDDE30055244C /* MaytinhcanhanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722B0F91E1CDDE30055244C /* MaytinhcanhanTests.swift */; };
 		6722B1051E1CDDE30055244C /* MaytinhcanhanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722B1041E1CDDE30055244C /* MaytinhcanhanUITests.swift */; };
 		6793E9BF1E1E0D2B0059BA14 /* Calculator.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6793E9BE1E1E0D2B0059BA14 /* Calculator.ttf */; };
+		6793E9C11E1E23110059BA14 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6793E9C01E1E23110059BA14 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6722B1041E1CDDE30055244C /* MaytinhcanhanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaytinhcanhanUITests.swift; sourceTree = "<group>"; };
 		6722B1061E1CDDE30055244C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6793E9BE1E1E0D2B0059BA14 /* Calculator.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calculator.ttf; sourceTree = "<group>"; };
+		6793E9C01E1E23110059BA14 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		6722B0D51E1CDDE30055244C = {
 			isa = PBXGroup;
 			children = (
+				6793E9C01E1E23110059BA14 /* btn.wav */,
 				6793E9BE1E1E0D2B0059BA14 /* Calculator.ttf */,
 				6722B0E01E1CDDE30055244C /* Maytinhcanhan */,
 				6722B0F81E1CDDE30055244C /* MaytinhcanhanTests */,
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6793E9C11E1E23110059BA14 /* btn.wav in Resources */,
 				6793E9BF1E1E0D2B0059BA14 /* Calculator.ttf in Resources */,
 				6722B0EF1E1CDDE30055244C /* LaunchScreen.storyboard in Resources */,
 				6722B0EC1E1CDDE30055244C /* Assets.xcassets in Resources */,
