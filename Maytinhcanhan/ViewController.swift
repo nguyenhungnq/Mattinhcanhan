@@ -57,19 +57,26 @@ class ViewController: UIViewController {
     @IBAction func onDividePressed(sender: AnyObject) {
         processOperation(operation: .Divide)
     }
+    // An vao dau chia (/)
+    
     @IBAction func onMultiplyPressed(sender: AnyObject) {
         processOperation(operation: .Multiply)
     }
+    // An vao dau nhan (x)
+    
     @IBAction func onSubtractPressed(sender: AnyObject) {
         processOperation(operation: .Subtract)
     }
+    //An vao dau tru (-)
     @IBAction func onAddPressed(sender: AnyObject) {
         processOperation(operation: .Add)
     }
+    // An vao dau cong (+)
     
     @IBAction func onEqualPressed(sender: AnyObject) {
         processOperation(operation: currentOperation)
     }
+    // An vao dau bang (=)
     
     func playSound() {
         if btnSound.isPlaying {
@@ -99,6 +106,7 @@ class ViewController: UIViewController {
                 } else if currentOperation == Operation.Add {
                     result = "\(Double(leftValStr)! + Double(rightValStr)!)"
                 }
+                // Thuc hien cac phep toan
                 
                 leftValStr = result
                 outputLbl.text = result
