@@ -46,12 +46,16 @@ class ViewController: UIViewController {
         outputLbl.text = "0"
         
     }
+    // Chay het dam nay man hinh defauld se hien ra man hinh
     
     @IBAction func numberPressed(sender: UIButton) {
+        // yeu cau an vao cac phim so
         playSound()
+        //Keu nhac khi an so bat ky
         
         runningNumber += "\(sender.tag)"
         outputLbl.text = runningNumber
+        //Vong lap de nhap nhieu so cho mot gia tri VD: 23453 Hoac 12
     }
     
     @IBAction func onDividePressed(sender: AnyObject) {
@@ -85,7 +89,7 @@ class ViewController: UIViewController {
         }
         
         btnSound.play()
-        
+        // Am thanh khi an so
     }
     
     func processOperation(operation: Operation) {
@@ -110,6 +114,7 @@ class ViewController: UIViewController {
                 
                 leftValStr = result
                 outputLbl.text = result
+                //Ket qua sau khi thuc hien phep tinh
             }
             
             currentOperation = operation
